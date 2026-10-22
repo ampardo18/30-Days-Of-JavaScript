@@ -1,0 +1,42 @@
+<!-- Day 3: Booleans, operators, and date -->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let base = prompt('Enter base:')
+            let height = prompt('Enter height:')
+            console.log(`The area of the triangle is ${0.5 * base * height}`)
+        </script>
+
+        <script>
+            let a = prompt('Enter side a:')
+            let b = prompt('Enter side b:')
+            let c = prompt('Enter side c:')
+            console.log(`The perimeter of the triangle is ${parseInt(a) + parseInt(b)+ parseInt(c)}`)
+
+            let length = prompt('Enter length')
+            let width = prompt('Enter width')
+            console.log(`Perimter: ${2 * (parseInt(length) * parseInt(width))}\nArea: ${parseInt(length) * parseInt(width)}`)
+        </script>
+        <script>
+            let hours = prompt('Enter hours')
+            let rate = prompt('Enter rate per hour')
+            console.log(`Your weekly earning is $${parseInt(hours) * parseInt(rate)}`)
+        </script>
+        <script>
+            let birthYear = prompt('Enter birth year:')
+            const time = new Date()
+            year = time.getFullYear()
+            if (year - birthYear >= 18){
+                console.log(`You are ${birthYear}. You are old enough to drive`)
+            }else{
+                console.log(`You are ${year - birthYear}. You will be allowed to drive after ${18 - (year - birthYear)}`)
+            }
+        </script>
+        <script>
+            let years = prompt('Enter number of years you live:')
+            console.log(`You lived ${parseInt(years) * 31536000}`)
+        </script>
+    </body>
+</html>
