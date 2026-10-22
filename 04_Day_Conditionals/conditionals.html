@@ -1,0 +1,28 @@
+<!-- Day 4: Conditionals-->
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let age = prompt('Enter your age:')
+            if (age >= 18){
+                console.log('You are old enough to drive')
+            }else{
+                console.log(`You need ${18 - age} more years to drive.`)
+            }
+
+            let myAge = 30
+            if (age > myAge){
+                console.log(`You are ${age - myAge} years older than me`)
+            }else{
+                console.log(`I am ${myAge - age} years older than you`)
+            }
+
+            let num = prompt('Eenter a number:')
+            if (num % 2 == 0){
+                console.log(`${num} is an even number`)
+            }else{
+                console.log(`${num} is an odd number`)
+            }
+        </script>
+    </body>
+</html>
