@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<body>
+    <script>
+        localStorage.setItem('firstname', 'Milo')
+        localStorage.setItem('lastname', 'Pardo')
+        localStorage.setItem('age', 22)
+        localStorage.setItem('country', 'USA')
+        localStorage.setItem('city', 'Chicago')
+
+        const student = {
+            firstname: 'Hachi',
+            lastname: 'Lopez',
+            skills: ['HTML', 'TypeScript', 'CSS', 'JavaScript', 'PostgreSQL'],
+            country: 'Mexico',
+            enrolled: false
+        }
+
+        const studentUser = JSON.stringify(student, undefined, 2)
+        localStorage.setItem('user 1', studentUser)
+    </script>
+</body>
+</html>
